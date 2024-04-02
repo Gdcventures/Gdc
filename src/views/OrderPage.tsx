@@ -7,6 +7,7 @@ import grandStoresCac from "../assets/images/grand-stores-cac.jpg";
 import { useEffect, useRef, useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
+import ScrollToTop from "../components/ScrollToTop";
 
 // Form data type declaration
 type FormDataType = {
@@ -116,6 +117,7 @@ function OrderPage() {
 
     return (
         <>
+            <ScrollToTop />
             <Header />
 
             <div className="max-w-screen-lg mx-auto px-4 py-6 pt-4 text-black">
